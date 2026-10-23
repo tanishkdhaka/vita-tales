@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: vita-tales
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SITE_NAME
+        value: Vita Tales

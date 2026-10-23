@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Next.js build output
+.next/
+out/
+
+# Production build artifacts
+build/
+dist/
+
+# SQLite WAL & SHM temporary journals (only biography.db is committed)
+data/*.db-wal
+data/*.db-shm
+
+# Environment files
+.env*.local
+.env
+
+# Temporary scrapped content
+your-next-app/
+
+# TypeScript compiler cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.gemini/

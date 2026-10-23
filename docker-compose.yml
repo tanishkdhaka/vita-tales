@@ -1,0 +1,16 @@
+services:
+  vita-tales:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vita-tales
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - SITE_NAME=Vita Tales
+    volumes:
+      - ./data:/app/data
+      - ./public/uploads:/app/public/uploads

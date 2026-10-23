@@ -1,0 +1,9 @@
+node_modules
+.next
+.git
+.github
+.gemini
+*.log
+.env.local
+tests
+your-next-app
