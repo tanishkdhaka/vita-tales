@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
   serverExternalPackages: ["better-sqlite3"],
   images: {
+    contentDispositionType: "inline",
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     formats: ["image/avif", "image/webp"],
     qualities: [50, 75, 90],
     minimumCacheTTL: 86400, // 24 hours
